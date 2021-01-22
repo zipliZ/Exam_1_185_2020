@@ -3,14 +3,14 @@
 
 using namespace std;
 
-class LengthConverter {
+class TemperatureConvector {
     
     float temperature;
     char convertTo;
 
     public:
     
-    string convertTemp (float temperature, char convertTo){
+    void convertTemp (float temperature, char convertTo){
            
             if (convertTo=='F' or convertTo =='f')
             {   
@@ -24,7 +24,7 @@ class LengthConverter {
             {
                 cout<< "Unknown symbol" << endl;
             }
-           
+            
         }
 
         
@@ -33,9 +33,9 @@ class LengthConverter {
 
 int main () {
 
-    LengthConverter s ;
+ TemperatureConvector s ;
     s.convertTemp (32,'C');
-    LengthConverter fs ;
+ TemperatureConvector fs ;
     fs.convertTemp (5.00,'F');
     return 0;
 }
